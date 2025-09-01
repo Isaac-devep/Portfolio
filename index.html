@@ -1,890 +1,708 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio IsaacFlorez</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <title>Portfolio | Isaac Flórez</title>
+  <meta name="description"
+    content="Portafolio de Isaac Flórez — Full Stack Developer: sitios web, apps móviles y sistemas de escritorio." />
+  <link rel="canonical" href="https://isaacflorezdev.netlify.app/" />
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portfolio | Isaac Flórez" />
+  <meta property="og:description" content="Full Stack Developer — Web, Mobile & Desktop." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/images/my-avatar.png" />
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD Person (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Isaac Flórez",
+    "jobTitle":"Full Stack Developer",
+    "email":"mailto:isaacfelipefloresmorales@gmail.com",
+    "url":"https://isaacflorezdev.netlify.app/",
+    "address":{"@type":"PostalAddress","addressLocality":"Barranquilla","addressCountry":"CO"},
+    "sameAs":[
+      "https://github.com/Isaac-devep",
+      "https://www.instagram.com/isaacflorez17/",
+      "https://web.facebook.com/profile.php?id=100084895449035"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
   <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
-
       <div class="sidebar-info">
-
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Avatar de Isaac Flórez" width="80" loading="lazy" />
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Isaac Flórez</h1>
-
+          <h1 class="name" title="Isaac Flórez">Isaac Flórez</h1>
           <p class="title">Full Stack Developer</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
+        <button class="info_more-btn" data-sidebar-btn aria-expanded="false" aria-controls="sidebar-more">
+          <span>Mostrar contactos</span>
+          <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
         </button>
-
       </div>
 
-      <div class="sidebar-info_more">
-
+      <div class="sidebar-info_more" id="sidebar-more">
         <div class="separator"></div>
 
         <ul class="contacts-list">
-
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="mail-outline" aria-hidden="true"></ion-icon></div>
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">isaacfelipefloresmorales@gmail.com</a>
+              <a href="mailto:isaacfelipefloresmorales@gmail.com"
+                class="contact-link">isaacfelipefloresmorales@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon></div>
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
+              <p class="contact-title">Teléfono</p>
               <a href="tel:+573003909547" class="contact-link">+57 300 3909547</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="calendar-outline" aria-hidden="true"></ion-icon></div>
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">March 17, 2004</time>
+              <p class="contact-title">Cumpleaños</p>
+              <time datetime="2004-03-17">17 de marzo de 2004</time>
             </div>
-
           </li>
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="location-outline" aria-hidden="true"></ion-icon></div>
             <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Baranquilla, Colomabia</address>
+              <p class="contact-title">Ubicación</p>
+              <address>Barranquilla, Colombia</address>
             </div>
-
           </li>
-
         </ul>
 
         <div class="separator"></div>
 
         <ul class="social-list">
-
           <li class="social-item">
-            <a href="https://web.facebook.com/profile.php?id=100084895449035"  class="social-link" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://web.facebook.com/profile.php?id=100084895449035" class="social-link" target="_blank"
+              rel="noopener noreferrer" aria-label="Facebook">
+              <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
           <li class="social-item">
-            <a href="https://wa.me/573003909547" class="social-link" target="_blank">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li> 
-
-          <li class="social-item">
-            <a href="https://github.com/Isaac-devep?tab=repositories" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
+            <a href="https://wa.me/573003909547" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp">
+              <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
           <li class="social-item">
-            <a href="https://www.instagram.com/isaacflorez17/?hl=es-la" class="social-link" target="_blank" >
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://github.com/Isaac-devep?tab=repositories" class="social-link" target="_blank"
+              rel="noopener noreferrer" aria-label="GitHub">
+              <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
+          <li class="social-item">
+            <a href="https://www.instagram.com/isaacflorez17/?hl=es-la" class="social-link" target="_blank"
+              rel="noopener noreferrer" aria-label="Instagram">
+              <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
         </ul>
-
       </div>
-
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- MAIN CONTENT -->
     <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
+      <!-- NAVBAR -->
+      <nav class="navbar" aria-label="Secciones del sitio">
         <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link aria-current="page">About</button>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
         </ul>
-
       </nav>
 
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
 
         <section class="about-text">
           <p>
-            I am a Fullstack Developer from Barranquilla, Colombia, specializing in creating dynamic web pages and applications. 
-            I have worked on several independent projects, including web, mobile, and desktop applications.
+            Soy Ingeniero de Sistemas de Barranquilla, Colombia. Como Full Stack Developer,
+            construyo soluciones web, móviles y de escritorio con foco en rendimiento, UX y
+            código mantenible. Trabajo principalmente con <strong>React</strong>, <strong>Next.js</strong>,
+            <strong>React Native</strong>, <strong>Node.js/Express</strong> y <strong>MySQL</strong>;
+            domino <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y el
+            control de versiones con <strong>Git/GitHub</strong>.
           </p>
-
           <p>
-            My passion is developing functional, user-friendly, and visually appealing websites and applications. 
-            I add a personal touch to ensure the product is engaging and intuitive for users. 
-            My goal is to convey your message and identity in the most creative way possible. 
-            I have designed websites for small businesses and startups and developed a desktop inventory management system tailored for pharmacies.
+            He desarrollado proyectos reales: un sistema de inventario de escritorio para
+            droguerías, un clon de Google Traductor en <strong>React + TypeScript</strong> usando la
+            API de OpenAI, una herramienta <em>Image to Code</em> que transforma diseños en
+            HTML/CSS/JS, mi portafolio personal y <em>landing pages</em> como <strong>Plomería Indira</strong>.
+            Me gusta entregar productos listos para producción, bien documentados y fáciles de mantener.
+          </p>
+          <p>
+            Aprendo con lógica y práctica, y disfruto convertir ideas en productos funcionales.
+            Si buscas alguien que se ponga la camiseta y lleve tu proyecto de 0 a deploy,
+            hablemos.
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
+        <!-- Services -->
         <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
+          <h3 class="h3 service-title">What I'm doing</h3>
           <ul class="service-list">
-
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
+              <div class="service-icon-box"><img src="./assets/images/icon-design.svg" alt="Design icon" width="40"
+                  loading="lazy" /></div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
+                <p class="service-item-text">The most modern and high-quality design made at a professional level.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
+              <div class="service-icon-box"><img src="./assets/images/icon-dev.svg" alt="Web development icon"
+                  width="40" loading="lazy" /></div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
+                <p class="service-item-text">High-quality development of sites at the professional level.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
+              <div class="service-icon-box"><img src="./assets/images/icon-app.svg" alt="Mobile app icon" width="40"
+                  loading="lazy" /></div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
+                <p class="service-item-text">Professional development of applications for iOS and Android.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-git.svg" alt="camera icon" width="40">
-              </div>
-
+              <div class="service-icon-box"><img src="./assets/images/icon-git.svg" alt="Git icon" width="40"
+                  loading="lazy" /></div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Control Version</h4>
-
-                <p class="service-item-text">
-                  Expertise in version control using GitHub, ensuring efficient and collaborative code management.
-                </p>
+                <h4 class="h4 service-item-title">Version Control</h4>
+                <p class="service-item-text">Expertise using GitHub for efficient and collaborative code management.</p>
               </div>
-
             </li>
-
           </ul>
-
         </section>
-        <!--
-          - testimonials modal
-        -->
+
+        <!-- Testimonials Modal (placeholder) -->
         <div class="modal-container" data-modal-container>
           <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
+          <section class="testimonials-modal" aria-modal="true" role="dialog" aria-hidden="true">
+            <button class="modal-close-btn" data-modal-close-btn aria-label="Cerrar modal">
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
             <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <!--<img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>-->
-              </figure>
-              <!--<img src="./assets/images/icon-quote.svg" alt="quote icon">-->
+              <figure class="modal-avatar-box"></figure>
             </div>
             <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-              <time datetime="2021-06-14">14 June, 2021</time>
+              <h4 class="h3 modal-title" data-modal-title>—</h4>
+              <time datetime="2021-06-14">—</time>
               <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <p>—</p>
               </div>
             </div>
           </section>
         </div>
 
-
-        <!--
-          - clients
-        -->
-
+        <!-- Clients -->
         <section class="clients">
-
           <h3 class="h3 clients-title">Clients</h3>
-
           <ul class="clients-list has-scrollbar">
 
+            <!-- DIQUE Consultoría (logo oficial del sitio) -->
             <li class="clients-item">
-              <a href="https://plomeriaindira.com/" target="_blank">
-                <img src="./assets/images/Plomeria.png" alt="Plumbing">
+              <a href="https://diqueconsultoria.com/" target="_blank" rel="noopener">
+                <img src="https://diqueconsultoria.com/wp-content/uploads/2024/04/LogoDIQUE-Color-300x158.png"
+                  alt="DIQUE Consultoría" loading="lazy"
+                  onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=diqueconsultoria.com&sz=128'">
               </a>
             </li>
 
             <li class="clients-item">
-              <a href="https://grupotitanes.com/" target="_blank">
-                <img src="./assets/images/Titanes.png" alt="Titanes">
+              <a href="https://valhallanimations.com/" target="_blank" rel="noopener">
+                <img src="assets/images/valhallanimations.png"
+                  alt="Valhala Animations S.A.S" loading="lazy">
               </a>
             </li>
 
+            <!-- VIVA 1A (favicon Google 128px como logo estable) -->
             <li class="clients-item">
-              <a href="https://github.com/Isaac-devep/SYSInventario" target="_blank">
-                <img src="./assets/images/Droguqeira.png" alt="Inventory">
+              <a href="https://viva1a.com.co/" target="_blank" rel="noopener">
+                <img src="https://www.google.com/s2/favicons?domain=viva1a.com.co&sz=128" alt="VIVA 1A IPS"
+                  loading="lazy">
               </a>
             </li>
 
+            <!-- Leal Asesorías y Seguros LTDA -->
+            <li class="clients-item">
+              <a href="https://www.lealasesoriasseguros.com/" target="_blank" rel="noopener">
+                <img src="https://www.google.com/s2/favicons?domain=lealasesoriasseguros.com&sz=128"
+                  alt="Leal Asesorías y Seguros LTDA" loading="lazy">
+              </a>
+            </li>
+
+            <!-- Ingelift Vertical -->
+            <li class="clients-item">
+              <a href="https://ingeliftvertical.com/" target="_blank" rel="noopener">
+                <img src="https://www.google.com/s2/favicons?domain=ingeliftvertical.com&sz=128" alt="Ingelift Vertical"
+                  loading="lazy">
+              </a>
+            </li>
+
+            <!-- Valhalla Animations S.A.S (usa favicon de su dominio si lo habilitan; por ahora apunto al directorio empresarial y uso un placeholder de Google) -->
+            <li class="clients-item">
+              <a href="https://www.informacolombia.com/directorio-empresas/informacion-empresa/valhalla-animations-sas"
+                target="_blank" rel="noopener">
+                <img src="https://www.google.com/s2/favicons?domain=informacolombia.com&sz=128"
+                  alt="Valhalla Animations S.A.S" loading="lazy">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="https://plomeriaindira.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/Plomeria.png" alt="Plomería Indira" loading="lazy" />
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="https://grupotitanes.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/Titanes.png" alt="Grupo Titanes" loading="lazy" />
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="https://github.com/Isaac-devep/SYSInventario" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/Droguqeira.png" alt="Proyecto de inventario para droguería" loading="lazy" />
+              </a>
+            </li>
           </ul>
-
         </section>
-
       </article>
-      <!--
-        - #RESUME
-      -->
-      <article class="resume" data-page="resume">
 
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="book-outline" aria-hidden="true"></ion-icon>
             </div>
-
             <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Corporación Educativa Litoral</h4>
-
               <span>2022 — 2023</span>
-
               <p class="timeline-text">
-                I have created simple web pages, developed user interfaces, 
-                and implemented responsive designs. Additionally, 
-                I continually update my knowledge with the latest technologies 
-                to ensure that my projects are at the forefront of web development.
+                Formación en desarrollo web: creación de páginas, construcción de interfaces y diseños responsive.
+                Actualización constante en tecnologías modernas para mantener los proyectos al día.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University Autonoma del Caribe</h4>
-
-              <span>Currently</span>
-
+              <h4 class="h4 timeline-item-title">Corporación Universitaria Americana — Ingeniería de Sistemas
+                (Profesional)</h4>
+              <span>2023-2 — 2024 <strong>(Graduado)</strong></span>
               <p class="timeline-text">
-                I am a mechatronics student with extensive knowledge in web development, 
-                mobile application development, and desktop systems. 
-                My education has provided me with a strong foundation in these areas, 
-                allowing me to create efficient and user-friendly applications across various platforms. 
-                I am passionate about integrating my mechatronics background with my software development 
-                skills to deliver innovative and reliable solutions.
+                Título profesional en <strong>Ingeniería de Sistemas</strong>. Bases sólidas en desarrollo full stack,
+                bases de datos, patrones de diseño y buenas prácticas de ingeniería. Énfasis en proyectos prácticos,
+                despliegue a producción y control de versiones con Git/GitHub.
               </p>
-
             </li>
 
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Universidad Autónoma del Caribe — Ingeniería Mecatrónica (Profesional)
+              </h4>
+              <span>Actualmente</span>
+              <p class="timeline-text">
+                Actualmente estudiando <strong>Ingeniería Mecatrónica</strong> a nivel <strong>profesional</strong>,
+                integrando software y hardware. Aplicación de desarrollo web, móvil y de escritorio a proyectos
+                mecatrónicos,
+                priorizando eficiencia, usabilidad y calidad de código.
+              </p>
+            </li>
           </ol>
-
         </section>
 
+
         <section class="timeline">
-
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="book-outline" aria-hidden="true"></ion-icon></div>
             <h3 class="h3">Experience</h3>
           </div>
 
           <ol class="timeline-list">
-
+            <!-- NUEVOS PROYECTOS 2025 -->
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Sytem Inventory</h4>
-
-              <span>2022 — Finalized</span>
-
+              <h4 class="h4 timeline-item-title">Automatización de Historia Clínica (Escaneo de Cédula)</h4>
+              <span>2025 — Present</span>
               <p class="timeline-text">
-                I developed a specialized desktop system for inventory management in pharmacies, 
-                optimizing product tracking, stock control, and facilitating warehouse organization.
+                Diseño e implementación de un flujo de <strong>automatización clínica</strong>: al escanear la cédula
+                del paciente (código PDF417/QR),
+                el sistema consulta la <strong>base de datos</strong> y muestra en tiempo real la <strong>historia
+                  clínica</strong> del paciente escaneado.
+                Enfoque en <em>seguridad</em> (control de acceso, trazabilidad) y <em>UX</em> para personal médico.
               </p>
-
             </li>
 
-            
             <li class="timeline-item">
-              
-              <h4 class="h4 timeline-item-title">Google Translator clone (React.js and TypeScript)</h4>
-              
-              <span>2023 — Finalized</span>
-              
+              <h4 class="h4 timeline-item-title">Rapido-Ya — Aplicación Móvil de Mensajería</h4>
+              <span>2025 — Present</span>
               <p class="timeline-text">
-                With an easy-to-use interface, users can enter the text they want 
-                to translate and select the target language. 
-                The application connects to the OpenAI API to process the request 
-                and provides an accurate and fast translation.
+                App móvil de mensajería con chat en tiempo real, estados de entrega y arquitectura lista para
+                notificaciones <em>push</em>.
+                Stack centrado en <strong>React Native</strong> y buenas prácticas de rendimiento y diseño de UI.
               </p>
-              
             </li>
-            
+
             <li class="timeline-item">
-              
-              <h4 class="h4 timeline-item-title">Image to Code (React.js, Next.js)</h4>
-              
-              <span>2023 — Finalized</span>
-              
+              <h4 class="h4 timeline-item-title">Agente de IA para Licitaciones — Dique Consultoría</h4>
+              <span>2025 — Present</span>
               <p class="timeline-text">
-                A web application that converts images into HTML, CSS, and JavaScript code. 
-                It simplifies site creation by translating visual designs directly into functional code. 
-                The intuitive interface ensures efficient implementation.
+                Desarrollo de un <strong>agente de IA</strong> que evalúa licitaciones: extrae requisitos del pliego,
+                compara con la propuesta,
+                puntúa componentes <em>técnicos, experiencia, financiero y jurídico</em>, detecta
+                <strong>riesgos</strong> y sugiere
+                <em>recomendación</em> (Apta/Condicionada/No apta). Reducción del tiempo de análisis y mayor
+                consistencia en criterios.
               </p>
-              
             </li>
-            
+
+            <!-- PROYECTOS ANTERIORES -->
             <li class="timeline-item">
-              
               <h4 class="h4 timeline-item-title">Portfolio (HTML, CSS, JavaScript)</h4>
-              
               <span>2024 — Present</span>
-              
               <p class="timeline-text">
-                With an easy-to-use interface, users can enter the text they want 
-                to translate and select the target language. 
-                The application connects to the OpenAI API to process the request 
-                and provides an accurate and fast translation.
+                Portafolio personal con UI moderna y buenas prácticas de rendimiento.
               </p>
-              
             </li>
-            
+
             <li class="timeline-item">
-    
               <h4 class="h4 timeline-item-title">Plumbing Indira</h4>
-    
               <span>2024 — Present</span>
-    
               <p class="timeline-text">
-                I have designed and developed the landing page for Mrs. 
-                Indira using Bootstrap and JavaScript. 
-                The page utilizes Bootstrap for its responsive design and layout features, 
-                ensuring a visually appealing and user-friendly interface across various devices. 
-                JavaScript has been implemented to enhance interactivity and dynamic content, 
-                providing a more engaging experience for users. 
-                The combination of these technologies allows for a modern and functional 
-                landing page tailored to meet Mrs. Indira’s needs and expectations.
+                Landing page con Bootstrap y JavaScript: diseño responsive, interactividad y UX optimizada.
               </p>
-    
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Image to Code (React.js, Next.js)</h4>
+              <span>2023 — Finalized</span>
+              <p class="timeline-text">
+                Convierte imágenes en scaffolding de HTML/CSS/JS, acelerando la implementación desde diseños visuales.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Google Translator clone (React.js & TypeScript)</h4>
+              <span>2023 — Finalized</span>
+              <p class="timeline-text">
+                UI para traducir texto seleccionando idioma destino. Integra la API de OpenAI para respuestas rápidas.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">System Inventory</h4>
+              <span>2022 — Finalized</span>
+              <p class="timeline-text">
+                Sistema de inventario de escritorio para farmacias: seguimiento de productos, control de stock y
+                organización de bodega.
+              </p>
             </li>
           </ol>
-          
         </section>
-        
+
         <section class="skill">
-          
           <h3 class="h3 skills-title">My skills</h3>
-          
           <ul class="skills-list content-card">
-            
             <li class="skills-item">
-              
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="95">95%</data>
+                <h5 class="h5">Web design</h5><data value="95">95%</data>
               </div>
-              
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
+                <div class="skill-progress-fill" style="width:95%;"></div>
               </div>
-              
-            </li>
-
-            <li class="skills-item">
-              
-              <div class="title-wrapper">
-                <h5 class="h5">React.Js</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Node.Js</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
             </li>
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">React Native</h5>
-                <data value="75">75%</data>
+                <h5 class="h5">React.js</h5><data value="80">80%</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
+                <div class="skill-progress-fill" style="width:80%;"></div>
               </div>
-
-            </li>
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Next.Js</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-              
-            </li>
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">MySQL</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
             </li>
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-                <data value="60">60%</data>
+                <h5 class="h5">Node.js</h5><data value="80">80%</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
+                <div class="skill-progress-fill" style="width:80%;"></div>
               </div>
-
             </li>
-            
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="40">40%</data>
+                <h5 class="h5">React Native</h5><data value="75">75%</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
+                <div class="skill-progress-fill" style="width:75%;"></div>
               </div>
-
             </li>
-
-
-
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Next.js</h5><data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width:70%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">MySQL</h5><data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width:70%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5><data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width:60%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5><data value="40">40%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width:40%;"></div>
+              </div>
+            </li>
           </ul>
-
         </section>
-
       </article>
 
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
+      <!-- PORTFOLIO -->
       <article class="portfolio" data-page="portfolio">
-
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
 
         <section class="projects">
-
           <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Web design</button></li>
+            <li class="filter-item"><button data-filter-btn>Applications</button></li>
+            <li class="filter-item"><button data-filter-btn>Web development</button></li>
           </ul>
 
           <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
+            <button class="filter-select" data-select aria-expanded="false">
+              <div class="select-value" data-select-value>Selecciona categoría</div>
+              <div class="select-icon"><ion-icon name="chevron-down" aria-hidden="true"></ion-icon></div>
             </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
+            <ul class="select-list" role="listbox">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Web design</button></li>
+              <li class="select-item"><button data-select-item>Applications</button></li>
+              <li class="select-item"><button data-select-item>Web development</button></li>
             </ul>
-
           </div>
 
           <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://plomeriaindira.com/" target="_blank">
-
+            <!-- NUEVOS PROYECTOS -->
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" onclick="return false;">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon  name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Page-indira.png" alt="finance" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                  <img
+                    src="assets/images/historia-clinica.png"
+                    alt="Cámara de iPhone detectando y escaneando código QR (ejemplo de identificación rápida)"
+                    loading="lazy" onerror="this.src='./assets/images/portfolio.png'">
                 </figure>
-
-                <h3 class="project-title">plumbing indira</h3>
-
-                <p class="project-category">Web design</p>
-
+                <h3 class="project-title">Historia Clínica Automatizada</h3>
+                <p class="project-category">Applications</p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://clone-traductor.netlify.app/" target="_blank">
-
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" onclick="return false;">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Traducto-google-clone.png" alt="orizon" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                  <img src="assets/images/mensajeria.jpg"
+                    alt="Pantalla de smartphone con interfaz de mensajes de texto (referencia app de mensajería)"
+                    loading="lazy" onerror="this.src='./assets/images/TODOLIST.png'">
                 </figure>
+                <h3 class="project-title">Rapido-Ya (Mensajería)</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
 
-                <h3 class="project-title">Clon traductor de Google </h3>
-
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#" onclick="return false;">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                  <img
+                    src="assets/images/IA_Licitaciones.png"
+                    alt="Firma de contrato en sala de juntas (referencia a evaluación de licitaciones)" loading="lazy"
+                    onerror="this.src='./assets/images/Image-to-code.png'">
+                </figure>
+                <h3 class="project-title">Agente IA – Licitaciones (Dique Consultoría)</h3>
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://isaacflorezdev.netlify.app/" target="_blank">
-
+            <!-- PROYECTOS EXISTENTES -->
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="https://plomeriaindira.com/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/portfolio.png" alt="fundo" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                  <img src="./assets/images/Page-indira.png" alt="Landing Plomería Indira" loading="lazy">
                 </figure>
+                <h3 class="project-title">Plumbing Indira</h3>
+                <p class="project-category">Web design</p>
+              </a>
+            </li>
 
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://clone-traductor.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                  <img src="./assets/images/Traducto-google-clone.png" alt="Clon traductor Google" loading="lazy">
+                </figure>
+                <h3 class="project-title">Google Translate Clone</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="https://isaacflorezdev.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                  <img src="./assets/images/portfolio.png" alt="Portfolio personal de Isaac Flórez" loading="lazy">
+                </figure>
                 <h3 class="project-title">Portfolio</h3>
-
                 <p class="project-category">Web design</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/Isaac-devep/SYSInventario/tree/main">
-
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/Isaac-devep/SYSInventario/tree/main" target="_blank"
+                rel="noopener noreferrer">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Sisinventory.png" alt="brawlhalla" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                  <img src="./assets/images/Sisinventory.png" alt="Sistema de Inventario para farmacia" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Sytem Inventory</h3>
-
+                <h3 class="project-title">System Inventory</h3>
                 <p class="project-category">Applications</p>
-
               </a>
             </li>
-            
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/Isaac-devep/TODO-LIST">
-
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/Isaac-devep/TODO-LIST" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/TODOLIST.png" alt="task manager" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                  <img src="./assets/images/TODOLIST.png" alt="Aplicación TODO LIST" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">TODO LIST</h3>
-
                 <p class="project-category">Applications</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/Isaac-devep/IA" target="_blank">
-
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/Isaac-devep/IA" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Image-to-code.png" alt="arrival" loading="lazy">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                  <img src="./assets/images/Image-to-code.png" alt="Herramienta Image to Code" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Iamge to code</h3>
-
+                <h3 class="project-title">Image to Code</h3>
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
-
           </ul>
-
         </section>
-
       </article>
 
-
-      <!--
-        - #CONTACT
-      -->
-
+      <!-- CONTACT -->
       <article class="contact" data-page="contact">
-
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
+            <iframe title="Mapa de Barranquilla"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15600.82322044426!2d-74.82913122683154!3d10.996898738667225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42edb3c12eb61%3A0x5edc9b5159e8169e!2sLas%20Delicias%2C%20Barranquilla%2C%20Atl%C3%A1ntico%2C%20Colombia!5e0!3m2!1ses!2sco!4v1689254465418!5m2!1ses!2sco"
-              width="400" height="300" loading="lazy"></iframe>
+              width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </figure>
         </section>
 
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
-
+          <form class="form" data-form>
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+              <input type="email" name="email" class="form-input" placeholder="Email address" required
+                data-form-input />
             </div>
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
+              <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
-
       </article>
-
     </div>
-
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  emailjs.init('1BBwYTR1TkHLkok0U'); 
-</script>
-
-
+  <!-- Scripts -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script defer src="./assets/js/script.js"></script>
 </body>
 
 </html>
